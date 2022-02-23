@@ -15,7 +15,7 @@ You already know that printf() in C is std::cout in C++ e.g.
 
 printf("Hello World") --> std::cout << "Hello World";
 2.54cm = 1 inch
-*/
+
 
 
 #include <stdio.h>
@@ -28,3 +28,16 @@ int main()
     printf("Length in inches is %f \n", inches);
     return 0;
 }  
+*/
+
+#include<iostream>
+int main(void)
+{
+  float cm,inches;
+  std::cout<<"\n Enter length in  cm : ";
+  std::cin>>cm;
+  inches = cm / 2.54;
+  std::cout<<endl<<" Length in inches is"<<inches<<"\n";
+
+  return 0;
+}
